@@ -1,19 +1,9 @@
 add_rules("mode.debug", "mode.release")
 
-add_includedirs("src")
-
-target("httplib")
-    set_kind("static")
-    add_files("src/httplib.h")
-
-target("json")
-    set_kind("static")
-    add_filegroups("src/nlohmann")
-
 target("C++learning")
     set_kind("binary")
     add_files("src/main.cpp")
-    add_deps("httplib", "json")
+    add_includedirs("src")
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
