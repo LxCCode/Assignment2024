@@ -4,6 +4,7 @@ target("C++learning")
     set_kind("binary")
     add_files("src/main.cpp")
     add_includedirs("src")
+    add_packages("nlohmann_json", "cpp-httplib")
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
